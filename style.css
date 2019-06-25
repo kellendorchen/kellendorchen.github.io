@@ -1,0 +1,103 @@
+*{
+
+}
+
+body {
+  background: #434a54;
+  overflow-x: hidden;
+  font-family: 'Cambria',Georgia,serif;
+  font-size: 3vmin;
+}
+
+.box1 {
+  height: 100%;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  background: #cacaca;
+  border-bottom: solid black;
+}
+
+.box2 {
+  height: 100%;
+  width: 100%;
+  /* background: #fcaf67; */
+  /* background: #8ed5f7; */
+  background: none;
+  /* border-bottom: solid black; */
+}
+
+.frame {
+  border: 1px solid black;
+  border-radius: 4px;
+  padding: 5px;
+  width: 150px;
+}
+
+.extra {
+  display: none;
+  margin: 5%;
+  /* background: #e8d0bf; */
+  background: #cacaca;
+  border: solid black;
+  border-radius: 15px;
+
+}
+
+.background {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+}
+
+.reformat {
+  margin-top: .25em;
+  margin-bottom: .25em;
+}
+
+.slim {
+  margin-top: .1em;
+  margin-bottom: .1em;
+}
+
+.slimish {
+  margin-top: .01em;
+  margin-bottom: .01em;
+}
+
+.half {
+  float: left;
+  width: 50%;
+}
+
+.date {
+  float: right;
+  font-size: 80%;
+}
+
+.fontSizer {
+  font-size: calc(3.5vmin * 1.2);
+}
+
+h3.fontSizer {
+  font-size: calc(3.5vmin * 1.7);
+}
+
+h5.fontSizer {
+  font-size: calc(3.5vmin * 1.45);
+}
+
+
+
+
+/* #trot0 {
+  display: block;
+  opacity: 1;
+}
+
+#trot1 {
+    display: none;
+    opacity: 0;
+} */
