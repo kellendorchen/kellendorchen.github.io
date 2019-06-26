@@ -3,10 +3,12 @@
 }
 
 body {
-  background: #434a54;
+  /* background: #434a54; */
+  background: #faf2e1;
   overflow-x: hidden;
   font-family: 'Cambria',Georgia,serif;
   font-size: 3vmin;
+  color: white;
 }
 
 .box1 {
@@ -14,13 +16,16 @@ body {
   width: 100%;
   padding-left: 10px;
   padding-right: 10px;
-  background: #cacaca;
-  border-bottom: solid black;
+  background: black;
+  opacity: 0.8;
+  /* background: #cacaca; */
+  border-bottom: 0.5px solid white;
 }
 
 .box2 {
   height: 100%;
   width: 100%;
+  opacity: 0.8;
   /* background: #fcaf67; */
   /* background: #8ed5f7; */
   background: none;
@@ -28,18 +33,20 @@ body {
 }
 
 .frame {
-  border: 1px solid black;
+  border: 0.5px solid white;
   border-radius: 4px;
   padding: 5px;
   width: 150px;
+  opacity: 1;
 }
 
 .extra {
   display: none;
   margin: 5%;
   /* background: #e8d0bf; */
-  background: #cacaca;
-  border: solid black;
+  /* background: #cacaca; */
+  background: black;
+  /* border: 0.5px solid white; */
   border-radius: 15px;
 
 }
@@ -88,16 +95,3 @@ h3.fontSizer {
 h5.fontSizer {
   font-size: calc(3.5vmin * 1.45);
 }
-
-
-
-
-/* #trot0 {
-  display: block;
-  opacity: 1;
-}
-
-#trot1 {
-    display: none;
-    opacity: 0;
-} */

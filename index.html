@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Insert favicon here! -->
     <title>Kellen Dorchen</title>
   </head>
   <body>
-
     <div class="box1">
       <div class="container">
         <div class="row">
@@ -22,16 +22,16 @@
                 I love long walks on the beach. One day I plan to own my own business. I know you are tempted to take a chance on me. Just hire me bro. I love looking at art but making art is another story. Thank you for visiting my site!
               </p>
             </div>
-            <img src="theshot3.jpg" class="mr-3 frame" alt="...">
+            <img src="theshot3.jpg" class="mr-3 frame" alt="..." style="opacity: 1;">
           </div>
         </div>
         <br>
         <div class="row">
           <div class="col">
-            <button onclick="showHideContent('resume', ['contact', 'courses', 'abroad'])" type="button" class="btn btn-outline-dark">Resume</button>
-            <button onclick="showHideContent('courses', ['resume', 'contact', 'abroad'])" type="button" class="btn btn-outline-dark">Coursework</button>
-            <button onclick="showHideContent('abroad', ['resume', 'contact', 'courses'])" type="button" class="btn btn-outline-dark">Studies Abroad</button>
-            <button onclick="showHideContent('contact', ['resume', 'courses', 'abroad'])" type="button" class="btn btn-outline-dark">Contact Me</button>
+            <button onclick="showHideContent('resume', ['contact', 'courses', 'abroad'])" type="button" class="btn btn-outline-light">Resume</button>
+            <button onclick="showHideContent('courses', ['resume', 'contact', 'abroad'])" type="button" class="btn btn-outline-light">Coursework</button>
+            <button onclick="showHideContent('abroad', ['resume', 'contact', 'courses'])" type="button" class="btn btn-outline-light">Studies Abroad</button>
+            <button onclick="showHideContent('contact', ['resume', 'courses', 'abroad'])" type="button" class="btn btn-outline-light">Contact Me</button>
           </div>
         </div>
         <br>
@@ -170,56 +170,34 @@
       </div>
     </div>
 
-    <!-- <div class="background particles-js">
-    </div> -->
+    <!-- Canvas for particles -->
     <canvas class="background"></canvas>
 
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-
-    <!-- https://github.com/tameemsafi/typewriterjs -->
+    <!-- https://github.com/marcbruederlin/particles.js/ -->
     <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
+    <!-- https://github.com/tameemsafi/typewriterjs -->
 
     <script>
-    // import Typewriter from 'typewriter-effect';
-    // potentially delete counter later
-    var counter = 0;
-
     window.onload=
     function func1() {
       Particles.init({
         selector: '.background',
-        maxParticles: 100,
+        maxParticles: 150,
         color: '#cacaca',
-        // connectParticles: true,
         sizeVariations: 3,
-      });
-      // textRotation();
+      })
     };
 
     // Headliner
     new Typewriter('#headLine', {
-      strings: ['Innovator', 'Influencer', 'Genius'],
+      // Make strings shorter so site doesn't annoyingly shift for long strings
+      strings: ['Innovator', 'Influencer', 'Genius', 'Fashion Icon', 'Website Builder', 'World Class Guy', 'Scone Lover', 'Rock Climber', 'Legendary Comic', 'Art Lover', 'Algorithm User', 'Critical Thinker', 'Crime Solver', 'Pool Player', "Yeah that's me. An..."],
       autoStart: true,
-      // Why are the delays not working???
       delay: 13,
       pauseFor: 100000,
       loop: true,
     });
-
-    // Shows/hides content on button press
-    // No longer need? Built more advanced version consider deleting.
-    function showContent(y, x) {
-      var n = document.getElementById(x);
-      n.style.display = "none";
-      var r = document.getElementById(y);
-      if (r.style.display === "block") {
-        r.style.display = "none";
-      } else {
-        r.style.display = "block";
-      }
-    };
 
     // Takes in an element id to show and an array of element ids
     function showHideContent(y, hideMe) {
@@ -234,15 +212,7 @@
         r.style.display = "block";
       }
     };
-
-    // ---
-    // Old code is above new particle code is below
-    // particlesJS.load('particles-js', 'assets/particles.json', function() {
-    //   console.log('callback - particles.js config loaded');
-    // ---
-
     </script>
-
   </body>
 </html>
 
