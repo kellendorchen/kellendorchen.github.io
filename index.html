@@ -14,10 +14,8 @@
           <br>
           <div class="media">
             <div class="media-body">
-              <h5 class="mt-0 fontSizer">Kellen Dorchen
-                <!-- Or typewrite me ;) -->
-                <!-- <span id="trot0">Kellen Dorchen</span> -->
-                <!-- <span id="trot1">Innovator</span> -->
+              <h5 class="mt-0 fontSizer">
+                <span id="headLine"></span>
               </h5>
               <hr>
               <p>
@@ -50,12 +48,10 @@
             <!-- Edit href to contain downloadable resume -->
             <p>Download pdf version <a href="#">here</a>.</p>
             <br class="slimish">
-
             <!-- Educational Background -->
             <h5 class="reformat fontSizer">Education</h5>
             <hr class="slim half">
             <br class="slimish">
-
             <!-- Carleton College -->
             <p>
               <a href="https://www.carleton.edu/" target="_blank">Carleton College</a>
@@ -68,14 +64,11 @@
                 </li>
               </ul>
             </p>
-
             <br class="slimish">
-
             <!-- Experience Background -->
             <h5 class="reformat fontSizer">Experience</h5>
             <hr class="slim half">
             <br class="slimish">
-
             <!-- Fellow -->
             <p>
               <b>Admissions Fellow, Carleton College</b>
@@ -85,7 +78,6 @@
                 <li>etc...</li>
               </ul>
             </p>
-
             <!-- Admissions Office Assistant -->
             <p>
               <b>Office Assistant, Carleton College</b>
@@ -95,7 +87,6 @@
                 <li>etc...</li>
               </ul>
             </p>
-
             <!-- Athletic Coordinator -->
             <p>
               <b>Athletic Coordinator, Greenvale Park Community School</b>
@@ -105,7 +96,6 @@
                 <li>etc...</li>
               </ul>
             </p>
-
             <!-- Chess Coach -->
             <p>
               <b>Chess Coach, Northfield High School</b>
@@ -115,7 +105,6 @@
                 <li>Reviewed tournament matches with the students</li>
               </ul>
             </p>
-
             <!-- NSWL -->
             <p>
               <b>New Student Week Leader, Carleton College</b>
@@ -125,7 +114,6 @@
                 <li>Facilitated racial and other discussions</li>
               </ul>
             </p>
-
             <!-- Agape Hospice -->
             <p>
               <b>Volunteer, Agape Hospice</b>
@@ -136,7 +124,6 @@
                 <li>Hosted bingo events</li>
               </ul>
             </p>
-
             <!-- Student Teacher -->
             <p>
               <b>Student Teacher, Carolina High School</b>
@@ -146,7 +133,6 @@
                 <li>Performed office tasks and offer ideas</li>
               </ul>
             </p>
-
             <!-- Blanks -->
             <p>
               <b>title, place</b>
@@ -156,17 +142,16 @@
                 <li> </li>
               </ul>
             </p>
-
           </div>
-
 
           <!-- Courses Button -->
           <div class="col extra" id="courses">
             <h3 class="reformat fontSizer">Coursework</h3>
             <hr class="slim">
+
+            <!-- Consider using bootstrap list group -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-
 
           <!-- Studies Abroad -->
           <div class="col extra" id="abroad">
@@ -174,7 +159,6 @@
             <hr class="slim">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
-
 
           <!-- Contact Button -->
           <div class="col extra" id="contact">
@@ -192,10 +176,13 @@
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+    <!-- https://github.com/tameemsafi/typewriterjs -->
+    <script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script> -->
 
     <script>
-
+    // import Typewriter from 'typewriter-effect';
     // potentially delete counter later
     var counter = 0;
 
@@ -210,6 +197,16 @@
       });
       // textRotation();
     };
+
+    // Headliner
+    new Typewriter('#headLine', {
+      strings: ['Innovator', 'Influencer', 'Genius'],
+      autoStart: true,
+      // Why are the delays not working???
+      delay: 13,
+      pauseFor: 100000,
+      loop: true,
+    });
 
     // Shows/hides content on button press
     // No longer need? Built more advanced version consider deleting.
@@ -243,74 +240,6 @@
     // particlesJS.load('particles-js', 'assets/particles.json', function() {
     //   console.log('callback - particles.js config loaded');
     // ---
-
-
-    // function fadeOutEffect(x) {
-    //     var fadeTarget = document.getElementById(x);
-    //     var fadeEffect = setInterval(function () {
-    //         if (!fadeTarget.style.opacity) {
-    //             fadeTarget.style.opacity = 1;
-    //         }
-    //         if (fadeTarget.style.opacity > 0) {
-    //             fadeTarget.style.opacity -= 0.1;
-    //         } else {
-    //             clearInterval(fadeEffect);
-    //         }
-    //     }, 200);
-    // }
-    // function fadeInEffect(x) {
-    //     var fadeTarget = document.getElementById(x);
-    //     var fadeEffect = setInterval(function () {
-    //         if (!fadeTarget.style.opacity) {
-    //             fadeTarget.style.opacity = 0;
-    //         }
-    //         if (fadeTarget.style.opacity < 1) {
-    //             fadeTarget.style.opacity += 0.1;
-    //         } else {
-    //             clearInterval(fadeEffect);
-    //         }
-    //     }, 200);
-    // }
-    // function fade(element) {
-    //     var op = 1;  // initial opacity
-    //     var timer = setInterval(function () {
-    //         if (op <= 0.1){
-    //             clearInterval(timer);
-    //             element.style.display = 'none';
-    //         }
-    //         element.style.opacity = op;
-    //         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-    //         op -= op * 0.1;
-    //     }, 50);
-    // }
-    // function unfade(element) {
-    //     var op = 0.1;  // initial opacity
-    //     element.style.display = 'block';
-    //     var timer = setInterval(function () {
-    //         if (op >= 1){
-    //             clearInterval(timer);
-    //         }
-    //         element.style.opacity = op;
-    //         element.style.filter = 'alpha(opacity=' + op * 100 + ")";
-    //         op += op * 0.1;
-    //     }, 10);
-    // }
-    // function textRotation() {
-    //   counter +=1;
-    //   c = counter;
-    //   c = c%9;
-    //   if (c=3) {
-    //     fade('trot0');
-    //     unfade('trot1');
-    //   } else if (c=6) {
-    //     fade('trot1');
-    //   } else if (c=9) {
-    //     unfade('trot0');
-    //     c = 0
-    //   }
-    //   func1();
-    // }
-    // Need new fade functions for this to work
 
     </script>
 
