@@ -5,6 +5,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Insert favicon here! -->
+    <link rel="icon" href="/favicon_io/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <title>Kellen Dorchen</title>
   </head>
   <body>
@@ -19,7 +24,7 @@
               </h5>
               <hr>
               <p>
-                I love long walks on the beach. One day I plan to own my own business. I know you are tempted to take a chance on me. Just hire me bro. I love looking at art but making art is another story. Thank you for visiting my site!
+                An aspiring entrepreneur. Currently looking for work or a cool graduate school program. I learn quickly and am a natural leader. I love looking at art but making art is another story. Thank you for visiting my site!
               </p>
             </div>
             <img src="theshot3.jpg" class="mr-3 frame" alt="..." style="opacity: 1;">
@@ -46,7 +51,7 @@
             <h3 class="reformat fontSizer">Resume</h3>
             <hr class="slim">
             <!-- Edit href to contain downloadable resume -->
-            <p>Download pdf version <a href="#">here</a>.</p>
+            <p>Download pdf version <a href="#" onclick="alert('Sorry! This site is still under construction. I appreciate your patience :)')">here</a>.</p>
             <br class="slimish">
             <!-- Educational Background -->
             <h5 class="reformat fontSizer">Education</h5>
@@ -148,15 +153,33 @@
           <div class="col extra" id="courses">
             <h3 class="reformat fontSizer">Coursework</h3>
             <hr class="slim">
-
-            <!-- Consider using bootstrap list group -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <ul>
+              <!-- maybe make course name larger and add line break after description -->
+              <li>Algorithms
+                <ul>
+                  <li>Description</li>
+                </ul>
+              </li>
+              <li>Anthropology of Food</li>
+              <li>Arts of the Chinese Scholar's Studio</li>
+              <li>Chinese Art and Culture</li>
+              <li>Computability and Complexity</li>
+              <li>Computational Biology</li>
+              <li>Data Structures</li>
+              <li>Gardens in China and Japan</li>
+              <li>Organization and Architecture</li>
+              <li>...</li>
+              <li>Software Design</li>
+              <li>The Origins of Manga</li>
+            </ul>
           </div>
 
           <!-- Studies Abroad -->
           <div class="col extra" id="abroad">
             <h3 class="reformat fontSizer">Studies Abroad</h3>
             <hr class="slim">
+            <p>Sorry! This site is currently being built as we speak. It is still very much a work in progress and I thank you for your patience.</p>
+            <br>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
 
@@ -164,7 +187,11 @@
           <div class="col extra" id="contact">
             <h3 class="reformat fontSizer">Contact</h3>
             <hr class="slim">
-            <p>The digits and my social media handles and you know the drill;)</p>
+            <p>
+              Mobile: (864)380-8178 Feel free to leave a message! <br>
+              Email: <a href="mailto:kellen.dorchen@gmail.com" target="_blank">kellen.dorchen@gmail.com</a> <br>
+              LinkedIn: <a href="https://www.linkedin.com/in/kellendorchen/" target="_blank">click here</a>
+            </p>
           </div>
         </div>
       </div>
@@ -192,7 +219,7 @@
     // Headliner
     new Typewriter('#headLine', {
       // Make strings shorter so site doesn't annoyingly shift for long strings
-      strings: ['Innovator', 'Influencer', 'Genius', 'Fashion Icon', 'Website Builder', 'World Class Guy', 'Scone Lover', 'Rock Climber', 'Legendary Comic', 'Art Lover', 'Algorithm User', 'Critical Thinker', 'Crime Solver', 'Pool Player', "Yeah that's me. An..."],
+      strings: ['Innovator', 'Influencer', 'Genius', 'Fashion Icon', 'Website Builder', 'World Class Guy', 'Scone Lover', 'Rock Climber', 'Legendary Comic', 'Art Lover', 'Algorithm User', 'Critical Thinker', 'ENFJ/ESFJ', 'Pool Player', "Yeah that's me. An..."],
       autoStart: true,
       delay: 13,
       pauseFor: 100000,

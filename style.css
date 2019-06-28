@@ -67,6 +67,7 @@ body {
 .slim {
   margin-top: .1em;
   margin-bottom: .1em;
+  border-color: white;
 }
 
 .slimish {
@@ -77,6 +78,7 @@ body {
 .half {
   float: left;
   width: 50%;
+  border-color: white;
 }
 
 .date {
