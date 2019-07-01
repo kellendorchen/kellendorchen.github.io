@@ -102,3 +102,7 @@ h3.fontSizer {
 h5.fontSizer {
   font-size: calc(3.5vmin * 1.45);
 }
+
+h6.fontSizer {
+  font-size: calc(3.5vmin * 1.33);
+}
