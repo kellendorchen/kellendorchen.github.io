@@ -40,6 +40,11 @@ body {
   opacity: 1;
 }
 
+.border {
+  border: 0.5px;
+  border-color: white;
+}
+
 .extra {
   display: none;
   margin: 5%;
