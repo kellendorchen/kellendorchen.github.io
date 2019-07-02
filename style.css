@@ -40,9 +40,10 @@ body {
   opacity: 1;
 }
 
-.border {
+.descrBorder {
+  max-width: 90%;
   border: 0.5px;
-  border-color: white;
+  /* border-color: white; */
 }
 
 .extra {
