@@ -92,6 +92,11 @@ body {
   font-size: 80%;
 }
 
+a:hover {
+  /* color: #43978d; */
+  color: white;
+}
+
 .fontSizer {
   font-size: calc(3.5vmin * 1.2);
 }
