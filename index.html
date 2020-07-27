@@ -10,23 +10,27 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Kellen Dorchen</title>
+    <script>
+      function load() {
+        console.log("load event detected!");
+      }
+      window.onload = load;
+    </script>
   </head>
   <body>
     <div class="box1">
       <div class="container">
         <div class="row">
-          <br>
+          <h5 class="mt-0 fontSizer"><br><span id="headLine"></span></h5><br>
           <div class="media">
             <div class="media-body">
-              <h5 class="mt-0 fontSizer">
-                <span id="headLine"></span>
-              </h5>
-              <hr>
+              <p>Welcome to my site!</p>
               <p>
-                Currently looking for work or a cool graduate school program. I learn quickly and am a natural leader. Looking at art is my passion but making art is another story. Thank you for visiting my site!
+                I try to update it regularly but am not always successful. I appreciate your patience and thank you for visiting!
               </p>
+              <p>Currently operating from <i>Minnesota</i></p>
             </div>
-            <img src="images/headshot2.png" class="mr-3 frame" alt="Responsive image" style="opacity: 1; min-height: 70%; min-width: 45%;">
+            <img src="images/headshot2.png" class="mr-3 frame" alt="Responsive image" style="opacity: 1; min-height: 65%; min-width: 50%;">
           </div>
         </div>
         <br>
@@ -34,7 +38,6 @@
           <div class="col">
             <button onclick="showHideContent('resume', ['contact', 'courses', 'others'])" type="button" class="btn btn-outline-light">Resume</button>
             <button onclick="showHideContent('courses', ['resume', 'contact', 'others'])" type="button" class="btn btn-outline-light">Coursework</button>
-            <!-- Future work -->
             <button onclick="showHideContent('others', ['resume', 'courses', 'contact'])" type="button" class="btn btn-outline-light">Extracurriculars</button>
             <button onclick="showHideContent('contact', ['resume', 'courses','others'])" type="button" class="btn btn-outline-light">Contact Me</button>
           </div>
@@ -46,7 +49,6 @@
     <div class="box2">
       <div class="containter">
         <div class="row">
-
           <!-- Resume Button -->
           <div class="col extra" id="resume">
             <h3 class="reformat fontSizer">Resume</h3>
@@ -58,59 +60,69 @@
             <h5 class="reformat fontSizer">Education</h5>
             <hr class="slim half">
             <br class="slimish">
+            <!-- Rochester Institute of Technology -->
+            <p>
+              <a href="https://www.rit.edu" target="_blank">Rochester Institute of Technology</a>
+              <span class="date">Anticipated 11/2022</span>
+              <ul class="reformat">
+                <li>Master of Science in Computer Science</li>
+
+              </ul>
+            </p>
             <!-- Carleton College -->
             <p>
               <a href="https://www.carleton.edu/" target="_blank">Carleton College</a>
-              <span class="date">Anticipated 06/2020</span>
+              <span class="date">06/2020</span>
               <ul class="reformat">
                 <li>Bachelor of Arts in Computer Science</li>
                 <li>Minors: Art History, East Asian Studies</li>
                 <li><a href="https://apps.carleton.edu/curricular/ocs/japan/2020/" target="
-                  "><i>Study Abroad</i></a>: Linguistics and Culture in Japan</li>
+                  "><i>Study Abroad</i></a>: Linguistics and Culture in Japan - Cancelled due to COVID</li>
                 <li><a href="https://apps.carleton.edu/curricular/ocs/artnow/archive/2017/" target="
                   "><i>Study Abroad</i></a>: Contemporary Art and Art History (Europe)</li>
 
               </ul>
             </p>
             <br class="slimish">
-            <!-- Academic Projects -->
-            <h5 class="reformat fontSizer">Academic Projects</h5>
-            <hr class="slim half">
-            <br class="slimish">
-            <!-- COMPS -->
-            <p>
-              <b>Comprehensive Senior Research Project, Carleton College</b>
-              <span class="date">Fall 2019 - Winter 2020</span>
-              <ul>
-                <li>Researched COMPAS and other algorithms used within the U.S. criminal justice system</li>
-                <li>Developed classification algorithms to predict recidivism</li>
-              </ul>
-            </p>
-            <!-- Hackathon -->
-            <p>
-              <b>1<sup>st</sup> Place, Carleton Hackathon - <a href="https://github.com/maxgold45/carls-pool" target="_blank">GitHub Repo</a></b>
-              <span class="date">04/2019</span>
-              <ul>
-                <li>Cleverly used Google Forms and Google Sheets to implement the backend of a Ride Share website with features for drivers and riders to register and ride requests would be posted on a request bulletin board</li>
-              </ul>
-            </p>
-            <!-- Programming Languages -->
-            <p>
-              <b>Programming Languages</b>
-              <span class="date">Fall 2019</span>
-              <ul>
-                <li>Implemented an interpreter for simplified Scheme language and discussed good design practices</li>
-              </ul>
-            </p>
-            <!-- Software Design -->
-            <p>
-              <b>Software Design - <a href="https://github.com/carleton-cs257-fall-2018/assignments-dorchenk" target="_blank">GitHub Repo</a></b>
-              <span class="date">Fall 2018</span>
-              <ul>
-                <li>Utilized CSVs, MVCs, and Full Stack Design techniques on several projects</li>
-              </ul>
-            </p>
-
+            <div class="slight-keppel-li">
+              <!-- Academic Projects -->
+              <h5 class="reformat fontSizer">Academic Projects</h5>
+              <hr class="slim half">
+              <br class="slimish">
+              <!-- COMPS -->
+              <p>
+                <b>Comprehensive Senior Research Project, Carleton College</b>
+                <span class="date">Fall 2019 - Winter 2020</span>
+                <ul>
+                  <li>Researched COMPAS and other algorithms used within the U.S. criminal justice system</li>
+                  <li>Developed classification algorithms to predict recidivism</li>
+                </ul>
+              </p>
+              <!-- Hackathon -->
+              <p>
+                <b>1<sup>st</sup> Place, Carleton Hackathon - <a href="https://github.com/maxgold45/carls-pool" target="_blank">GitHub Repo</a></b>
+                <span class="date">04/2019</span>
+                <ul>
+                  <li>Cleverly used Google Forms and Google Sheets to implement the backend of a Ride Share website with features for drivers and riders to register and ride requests would be posted on a request bulletin board</li>
+                </ul>
+              </p>
+              <!-- Programming Languages -->
+              <p>
+                <b>Programming Languages</b>
+                <span class="date">Fall 2019</span>
+                <ul>
+                  <li>Implemented an interpreter for simplified Scheme language and discussed good design practices</li>
+                </ul>
+              </p>
+              <!-- Software Design -->
+              <p>
+                <b>Software Design - <a href="https://github.com/carleton-cs257-fall-2018/assignments-dorchenk" target="_blank">GitHub Repo</a></b>
+                <span class="date">Fall 2018</span>
+                <ul>
+                  <li>Utilized CSVs, MVCs, and Full Stack Design techniques on several projects</li>
+                </ul>
+              </p>
+            </div>
 
             <br class="slimish">
             <!-- Skills -->
@@ -119,8 +131,9 @@
             <br class="slimish">
             <p>
               <ul>
-                <li><i>Tech</i>: Python, Java, C, Git, HTML/CSS, PSQL, PostgreSQL, FXML, Excel, SLATE, CAD, CNC, Autodesk Inventor, MIPS</li>
-                <li><i>Language</i>: Mandarin</li>
+                <li><i>Tech</i>: Python, Java, C, Ruby on Rails, Git, HTML/CSS, PostgreSQL, R, Slate, Android Studio, FXML, Autodesk Inventor</li>
+                <li><i>Language</i>: Mandarin (intermediate)</li>
+                <li><i>Experienced with</i>: Agile, Asana, Harvest, CICD, Heroku, Slack, Github, Wireframing tools, Full-Stack Development </li>
               </ul>
             </p>
 
@@ -129,88 +142,125 @@
             <h5 class="reformat fontSizer">Experience</h5>
             <hr class="slim half">
             <br class="slimish">
-            <!-- Fellow -->
-            <p>
-              <b>Senior Admissions Fellow, Carleton College</b>
-              <span class="date">09/2017-Present</span>
-              <ul>
-                <li>Promoted from office assistant in June 2019</li>
-                <li>Entered and extracted information from Slate using queries, reports, and exports</li>
-                <li>Conducted one-on-one interviews with prospective students and submitted reports with my assessment</li>
-                <li>Led tour guide training for fellows and informative tours for 14 person addressing questions as they arose</li>
-                <li>Revised instruction sets and wrote new ones for Slate procedures and application reading procedures</li>
-                <li>Coordinated prospective student fly-in programs using excel and Slate</li>
-              </ul>
-            </p>
-            <!-- Editorial Intern -->
-            <p>
-              <b>Editorial Intern, <a href="https://www.stljewishlight.com/" target="_blank">St. Louis Jewish Light</a> - St. Louis, MO</b>
-              <span class="date">12/2019-12/2019</span>
-              <ul>
-                <li>Embed news articles onto website using HTML, CMS, InDesign, and Photoshop</li>
-                <li>Performed administrative tasks and attended tech meetings</li>
-              </ul>
-            </p>
-            <!-- Athletic Coordinator -->
-            <p>
-              <b>Athletic Coordinator, <a href="https://northfieldschools.org/schools/greenvale-park-elementary/greenvale-park-community-school/" target="_blank">Greenvale Park Community School</a> - Northfield, MN</b>
-              <span class="date">09/2016-03/2018</span>
-              <ul>
-                <li>Directed athletic programming ensuring the successful execution of a variety of activities</li>
-                <li>Participated in regular staff meetings to debrief the events of the day and brainstorm for new strategies</li>
-              </ul>
-            </p>
-            <!-- Chess Coach -->
-            <p>
-              <b>Chess Coach, Northfield High School - Northfield, MN</b>
-              <span class="date">09/2016-11/2016</span>
-              <ul>
-                <li>Lectured on strategies and chess concepts, and reviewed tournament matches with students</li>
-              </ul>
-            </p>
-            <!-- NSWL -->
-            <p>
-              <b>New Student Week Leader, Carleton College</b>
-              <span class="date">08/2017-09/2017</span>
-              <ul>
-                <li>Co-led a group of 14 new students and assisted in their transition into the Carleton community</li>
-                <li>Facilitated racial and other discussions to clearly communicate campus expectations</li>
-              </ul>
-            </p>
-            <!-- Dollar General -->
-            <p>
-              <b>Sales Associate, Dollar General - Greenville SC</b>
-              <span class="date">06/2016-12/2016</span>
-              <ul>
-                <li>Maintained a high-level of enthusiasm to provide tailored support and ensure positive consumer experiences</li>
-              </ul>
-            </p>
-            <!-- Agape Hospice -->
-            <p>
-              <b>Volunteer, Agape Hospice - Greenville, SC</b>
-              <span class="date">02/2016-08/2016</span>
-              <ul>
-                <li>Recruited volunteers and organized orientation meetings to train and prepare volunteers</li>
-              </ul>
-            </p>
-            <!-- Student Teacher -->
-            <p>
-              <b>Student Teacher, Carolina High School - Greenville SC</b>
-              <span class="date">01/2016-05/2016</span>
-              <ul>
-                <li>Reviewed student work and resumes</li>
-                <li>Performed office tasks and offer ideas</li>
-              </ul>
-            </p>
-            <!-- Blanks -->
-            <!-- <p>
-              <b>title, place</b>
-              <span class="date">xx/20xx-xx/20xx</span>
-              <ul>
-                <li> </li>
-                <li> </li>
-              </ul>
-            </p> -->
+            <div class="slight-keppel-li">
+              <!--  Plugged -->
+              <p>
+                <b>Solutions Architect / Project Manager, <a href="https://thepluggedapp.com/" target="_blank">The Plugged App</a> - Remote / Startup</b>
+                <span class="date">05/2020-Present</span>
+                <ul>
+                  <li>Engaged in weekly development meetings </li>
+                  <li>Devised project timeline </li>
+                  <li>Interviewed potential developers </li>
+                  <li>Analyzed research and produced user stories </li>
+                  <li>Estimated tech budget costs and analyzed development options </li>
+                </ul>
+              </p>
+              <!-- Software for Good -->
+              <p>
+                <b>Software Engineering Intern, <a href="https://softwareforgood.com/us/" target="_blank">Software for Good</a> - Remote</b>
+                <span class="date">06/2020-08/2020</span>
+                <ul>
+                  <li>Participated in daily intern and weekly team standups </li>
+                  <li>Consulted clients in weekly client meetings with biweekly agile sprints </li>
+                  <li>Implemented a Ruby on Rails project </li>
+                  <li>Regularly pair-programmed and attended mentor meetings </li>
+                  <li>Integrated the Stripe API, Twilio API, Rubocop, and Rspec </li>
+                  <li>Created GitHub pull requests and performed code reviews </li>
+                  <li>Independently learned Ruby on Rails basics in one week</li>
+                </ul>
+              </p>
+              <!-- Educational Associate -->
+              <p>
+                <b>Educational Associate, Carleton College - Remote</b>
+                <span class="date">06/2020-08/2020</span>
+                <ul>
+                  <li>Conducted informal focus groups of current African-American males to identify ways to better serve (Men of Color, etc) </li>
+                  <li>Assisted with new divisional podcast efforts </li>
+                </ul>
+              </p>
+              <!-- Fellow -->
+              <p>
+                <b>Senior Admissions Fellow, Carleton College</b>
+                <span class="date">09/2017-06/2020</span>
+                <ul>
+                  <li>Promoted from office assistant in June 2019</li>
+                  <li>Entered and extracted information from Slate using queries, reports, and exports</li>
+                  <li>Conducted one-on-one interviews with prospective students and submitted reports with my assessment</li>
+                  <li>Led tour guide training for fellows and informative tours for 14 person addressing questions as they arose</li>
+                  <li>Revised instruction sets and wrote new ones for Slate procedures and application reading procedures</li>
+                  <li>Coordinated prospective student fly-in programs using excel and Slate</li>
+                </ul>
+              </p>
+              <!-- Editorial Intern -->
+              <p>
+                <b>Editorial Intern, <a href="https://www.stljewishlight.com/" target="_blank">St. Louis Jewish Light</a> - St. Louis, MO</b>
+                <span class="date">12/2019-12/2019</span>
+                <ul>
+                  <li>Embed news articles onto website using HTML, CMS, InDesign, and Photoshop</li>
+                  <li>Performed administrative tasks and attended tech meetings</li>
+                </ul>
+              </p>
+              <!-- Athletic Coordinator -->
+              <p>
+                <b>Athletic Coordinator, <a href="https://northfieldschools.org/schools/greenvale-park-elementary/greenvale-park-community-school/" target="_blank">Greenvale Park Community School</a> - Northfield, MN</b>
+                <span class="date">09/2016-03/2018</span>
+                <ul>
+                  <li>Directed athletic programming ensuring the successful execution of a variety of activities</li>
+                  <li>Participated in regular staff meetings to debrief the events of the day and brainstorm for new strategies</li>
+                </ul>
+              </p>
+              <!-- Chess Coach -->
+              <p>
+                <b>Chess Coach, Northfield High School - Northfield, MN</b>
+                <span class="date">09/2016-11/2016</span>
+                <ul>
+                  <li>Lectured on strategies and chess concepts, and reviewed tournament matches with students</li>
+                </ul>
+              </p>
+              <!-- NSWL -->
+              <p>
+                <b>New Student Week Leader, Carleton College</b>
+                <span class="date">08/2017-09/2017</span>
+                <ul>
+                  <li>Co-led a group of 14 new students and assisted in their transition into the Carleton community</li>
+                  <li>Facilitated racial and other discussions to clearly communicate campus expectations</li>
+                </ul>
+              </p>
+              <!-- Dollar General -->
+              <p>
+                <b>Sales Associate, Dollar General - Greenville SC</b>
+                <span class="date">06/2016-12/2016</span>
+                <ul>
+                  <li>Maintained a high-level of enthusiasm to provide tailored support and ensure positive consumer experiences</li>
+                </ul>
+              </p>
+              <!-- Agape Hospice -->
+              <p>
+                <b>Volunteer, Agape Hospice - Greenville, SC</b>
+                <span class="date">02/2016-08/2016</span>
+                <ul>
+                  <li>Recruited volunteers and organized orientation meetings to train and prepare volunteers</li>
+                </ul>
+              </p>
+              <!-- Student Teacher -->
+              <p>
+                <b>Student Teacher, Carolina High School - Greenville SC</b>
+                <span class="date">01/2016-05/2016</span>
+                <ul>
+                  <li>Reviewed student work and resumes</li>
+                  <li>Performed office tasks and offer ideas</li>
+                </ul>
+              </p>
+              <!-- Blanks -->
+              <!-- <p>
+                <b>title, place</b>
+                <span class="date">xx/20xx-xx/20xx</span>
+                <ul>
+                  <li> </li>
+                  <li> </li>
+                </ul>
+              </p> -->
+            </div>
           </div>
 
           <!-- Courses Button -->
@@ -321,9 +371,7 @@
           <div class="col extra" id="others">
             <h3 class="reformat fontSizer">Extracurriculars</h3>
             <hr class="slim">
-            <p>
-              Coming soon!
-            </p>
+            <br>
             <ul class="list-unstyled">
               <li class="media">
                 <img src="images/interests/mocboard.jpg" class="mr-3" alt="Responsive image" style="opacity: 1; max-height: 25%; max-width: 25%;">
@@ -331,7 +379,8 @@
                   <h4 class="reformat fontSizer">Leadership</h4>
                   <hr class="slim">
                   <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    Having the opportunity to re-establish and co-lead a Men of Color (MOC) has been an incredible experience. During my first year at Carleton, there was a strong MOC presence that help shaped my experience at Carleton. I was deeply saddened when the group lost it's structure and ultimately fell apart at the end of my second year.
+                    MOC was re-established after an inspiring dinner-time conversation with Maxime (pictured fourth from the left) in spring of my third year. We quickly mobilized and during my fourth year we were able foster community and re-create the invaluable experiences that MOC had provided us in the past.
                   </p>
                 </div>
               </li>
@@ -342,7 +391,7 @@
                   <h4 class="reformat fontSizer">Team Building</h4>
                   <hr class="slim">
                   <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    Collaborating with others is essential to my daily life. Whether its pair-programming, working with other cultural groups to produce great events, or sorting M&Ms with chopsticks so my team can win the relay race. Teamwork makes the dream work.
                   </p>
                 </div>
               </li>
@@ -353,7 +402,7 @@
                   <h4 class="reformat fontSizer">Community Events</h4>
                   <hr class="slim">
                   <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    Being active in the community has always been important to me. Participating in community events shows ones support and leads to new relationships.
                   </p>
                 </div>
               </li>
@@ -364,7 +413,8 @@
                   <h4 class="reformat fontSizer">Cultural Groups</h4>
                   <hr class="slim">
                   <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    Learning about different cultures is incredibly important to me. Throughout my life I have been exposed to cultures outside of mine. At Carleton, I studied Mandarin for two years and have been apart of Latin American Student Association (LASO) and the Coalition of Hmong Students(CHS).
+                    During my time co-leading we were able to host two big events with many of the cultural groups on campus. A multi-cultural board game night and an ice-skating event.
                   </p>
                 </div>
               </li>
@@ -375,7 +425,7 @@
                   <h4 class="reformat fontSizer">Athletics</h4>
                   <hr class="slim">
                   <p>
-                    Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    Athletics are my passion. While at Carleton, I participated in club soccer, club tennis, and some intramurals. I also picked up rock climbing, fencing, racketball, and squash.
                   </p>
                 </div>
               </li>

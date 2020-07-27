@@ -112,3 +112,7 @@ h5.fontSizer {
 h6.fontSizer {
   font-size: calc(3.5vmin * 1.33);
 }
+
+.slight-keppel-li ul li {
+  color: #15B097;
+}
